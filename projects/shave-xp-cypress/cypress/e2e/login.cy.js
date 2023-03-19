@@ -1,5 +1,4 @@
-import login from '../support/pages/login'
-import loginPage from '../support/pages/login'
+import loginPage from '../support/pages/login' 
 // importando a classe objeto dentro desse login page
 import shaversPage from '../support/pages/shaves'
 
@@ -28,15 +27,7 @@ describe('login', () => {
 			}
 
 
-			cy.visit('http://localhost:3000')
-
-			cy.get('input[placeholder$=email]').type(user.email)
-
-			cy.get('input[placeholder*=senha]').type(user.password)
-
-			////button[text()="Entrar"]
-			cy.contains('button', 'Entrar')
-				.click()
+			loginPage.submit(user.email, user.password)
 
 			const message = 'Ocorreu um erro ao fazer login, verifique suas credenciais'
 
@@ -51,15 +42,7 @@ describe('login', () => {
 			}
 
 
-			cy.visit('http://localhost:3000')
-
-			cy.get('input[placeholder$=email]').type(user.email)
-
-			cy.get('input[placeholder*=senha]').type(user.password)
-
-			////button[text()="Entrar"]
-			cy.contains('button', 'Entrar')
-				.click()
+			loginPage.submit(user.email, user.password)
 
 			const message = 'Ocorreu um erro ao fazer login, verifique suas credenciais'
 
