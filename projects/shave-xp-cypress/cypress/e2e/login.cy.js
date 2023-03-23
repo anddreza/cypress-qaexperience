@@ -11,7 +11,7 @@ describe('login', () => {
 	context('quando submeto o formulário', () => {
 
 		it('deve logar com sucesso', () => {
-			//const user = 
+			const user = data.sucess 
 // foi transferido para users.json
 			loginPage.submit(data.email, data.password)
 			//userShouldLoggenIn(user.name)
@@ -21,12 +21,8 @@ describe('login', () => {
 
 
 		it('não deve logar com senha incorreta', () => {
-			const user = {
-				name: 'Andressa',
-				email: 'andressa@icloud.com',
-				password: 'abc123'
-			}
-
+		
+			const user = data.invpass
 			loginPage.submit(user.email, user.password)
 
 			const message = 'Ocorreu um erro ao fazer login, verifique suas credenciais.'
@@ -35,11 +31,7 @@ describe('login', () => {
 		})
 
 		it('não deve logar com email não cadastrado', () => {
-			const user = {
-				name: 'Andressa',
-				email: 'andre@404.com',
-				password: 'abc123'
-			}
+			const user = data.email404
 
 			loginPage.submit(user.email, user.password)
 
@@ -68,36 +60,20 @@ describe('login', () => {
 		})
  
 	context('senha muito curta', () => {
-		const passwords = [
-			'1',
-			'12',
-			'123',
-			'1234',
-			'12345'
-		]
+	
 
-		passwords.forEach((p) => {
+		data.shortpass.forEach((p) => {
 			it(`não deve logar com a senha: ${p}`, ()=> {
 				loginPage.submit('andressa@icloud.com', p)
-				loginPage.alertShouldBe('Pelo menos 6 caracteres')
+				loginPage.alertShouldBe('Pelo menos 6 caracteres')	
 
 			})
 		})
 	})
 
 	context('email no formato incorreto', () => {
-		const emails = [
-			'andressa&icloud.com',
-			'andressa.com.br',
-			'@icloud.com',
-			'@', 
-			'andressa@',
-			'123123',
-			'!@#!@#',
-			'xpto123'
-		]
-
-		emails.forEach((e) => {
+		
+		data.invemails.forEach((e) => {
 			it(`não deve logar com a senha: ${e}`, ()=> {
 				loginPage.submit(e, 'pwd123')
 				loginPage.alertShouldBe('Informe um email válido')
