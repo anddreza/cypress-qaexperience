@@ -1,0 +1,21 @@
+{
+	"sucess": {
+
+	
+	"name": "Andressa",
+	"email": "andressa@icloud.com",
+	"password": "pwd123"
+	},
+
+	"invpass": {
+		"name": "Andressa",
+		"email": "andressa@icloud.com",
+		"password": "abc123"
+	},
+
+	"email404": {
+		"name": "Andressa",
+		"email": "andre@404.com",
+		"password": "abc123"
+	}
+}
