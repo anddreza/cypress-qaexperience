@@ -1,0 +1,11 @@
+# É isso ai! 	
+apps/dist/
+apps/shave-xp/cypress/
+projects/shave-xp-cypress/cypress/support/components/
+projects/shave-xp-cypress/cypress/support/dist/
+projects/shave-xp-cypress/cypress/support/pages/shaves/
+projects/shave-xp-cypress/cypress/support/tasks/
+projects/shave-xp-cypress/cypress/videos/
+projects/shave-xp-cypress/dist/
+projects/shave-xp-cypress/node_modules/
+projects/shave-xp-cypress/package-lock.json
