@@ -9,10 +9,11 @@ import data from '../fixtures/users.json' //importando o json dentro do login.cy
 describe('login', () => {
 
 	context('quando submeto o formulário', () => {
-
 		it('deve logar com sucesso', () => {
 			const user = data.sucess 
 // foi transferido para users.json
+			cy.createUser(user)
+
 			loginPage.submit(data.email, data.password)
 			//userShouldLoggenIn(user.name)
 			//loginPage.userShouldBeLoggenIn(user.name) -> é uma validação. 
