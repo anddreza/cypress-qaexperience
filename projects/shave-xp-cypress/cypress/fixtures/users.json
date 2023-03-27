@@ -8,14 +8,34 @@
 	},
 
 	"invpass": {
-		"name": "Andressa",
+		
 		"email": "andressa@icloud.com",
 		"password": "abc123"
 	},
 
 	"email404": {
-		"name": "Andressa",
+	
 		"email": "andre@404.com",
 		"password": "abc123"
-	}
+	},
+	"shortpass": [
+		"1",
+		"12",
+		"123",
+		"1234",
+		"12345"
+	],
+	"invemails": [
+		"andressa&icloud.com",
+		"andressa.com.br",
+		"@icloud.com",
+		"@", 
+		"andressa@",
+		"123123",
+		"!@#!@#",
+		"xpto123"
+	]
+
+
 }
+
