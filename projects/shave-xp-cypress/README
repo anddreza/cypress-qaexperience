@@ -3,3 +3,20 @@
 Crio a classe com pascalCase e importo com CamelCase, 
 funções e variaveis precisam ser criadas com PascalCase
 classes e modulos com o padrão CamelCase
+
+<Aula Fixtures Parte 2:>
+
+CSV é um modelo arcaico de representação de dados para testes automatizados,
+JSON tenho flexibilidade, se fosse CSV é a mesma modelagem para todos os cenários. 
+(login.cy.js)
+
+<Aula Consumindo a API REST:>
+
+update users set password = 'xpto' where email = 'andressa@icloud.com'
+select * from users where email = 'andressa@icloud.com'
+- O dev alterou a senha do meu usuário e agora perco a alteração que foi realizada com a massa de teste. 
+- O problema não é a massa de teste ser fixa. 
+
+delete from users where 'andressa@icloud.com'
+
+- A solução seria deletar o usuário, criar manualmente o usuário novamente, 
