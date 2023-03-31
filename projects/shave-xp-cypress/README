@@ -18,5 +18,28 @@ select * from users where email = 'andressa@icloud.com'
 - O problema não é a massa de teste ser fixa. 
 
 delete from users where 'andressa@icloud.com'
+- A solução seria deletar o usuário, criar manualmente o usuário novamente, mas isso não seria 100% automatizado. 
+Solução temporária para verificar se está ocorrendo, conforme o cenário preposto: 
+// Dado que tenho um NOVO usuário 
+// Quando submeto o form de login com esse usuário
+// Então devo ser logado com sucesso 
+(solução realizada no cenário de 'deve logar com sucesso')
 
-- A solução seria deletar o usuário, criar manualmente o usuário novamente, 
+- Tenho que ter um usuário exatamente com as característica do usuário implementado no users.json (ou em qualquer outro doc)
+No insomnia: 
+POST: http://locahost:3333/users
+{
+	"name": "Andressa",
+	"email": "andressa@icloud.com",
+	"password": "pwd123"
+}
+status de retorno caso o usuário não seja cadastrado: 201 Created, agora sabemos como cadastrar um usuário via API 
+
+cy.request -> requisição via HTTP
+Cadastrando um usuário via API
+
+
+<Aula Conectando no banco de dados >
+A única forma de deletar o usuário pelo email é com um pacote: 
+npm install pg --save-dev 
+A biblioteca oficial do PostgresSQL
