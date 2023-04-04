@@ -44,3 +44,14 @@ A única forma de deletar o usuário pelo email é com um pacote:
 npm install pg --save-dev 
 A biblioteca oficial do PostgresSQL
 
+<Aula Construindo uma API Helper>
+npm install express --save-dev
+instalar a biblioteca do express
+
+npm install nodemon --save-dev: software feito em node para usar uma aplicação no ar, se não utilizar tem que ficar tirando e colocando API no ar, assim ele só instala. 
+
+npm install bcrypt --save-dev
+
+
+<Aula Validações com Joi>
+npm install express-joi-validation --save-dev
