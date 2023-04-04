@@ -12,19 +12,14 @@ const app = express ()
 
 app.use(express.json())
 
-
-const { deleteUser, insertUser } = require('./db')
-
+const { deleteUser, insertUser, findToken } = require('./db')
 
 const userSchema = Joi.object({
 	name: Joi.string().required(),
 	email: Joi.string().email().required(),
 	password: Joi.string().required(),
 	is_shaver: Joi.boolean().required()
-  })
-
-
-
+})
 
 app.get('/welcome', function(req, res){
 	res.json({message: 'Olá'})
@@ -38,7 +33,6 @@ app.delete('/user/:email', async function(req, res){
 })
 
 app.post('/user', validator.body(userSchema), async function(req, res){
-	console.log(req.body)
 	
 	const { name, email, password, is_shaver } = req.body
 
@@ -51,6 +45,7 @@ app.post('/user', validator.body(userSchema), async function(req, res){
 		is_shaver: is_shaver
 	}
 
+	// debito técnico porque ainda não consegue validar o is_shaver da maneira correta
 //	if(!user.name || !user.email || !user.password){
 //		return res.status(400).json({ message: 'Every fields is mandatory.'})
 //	}
@@ -62,7 +57,7 @@ app.post('/user', validator.body(userSchema), async function(req, res){
 		const id = await insertUser(user)
 		res.status(201).json({ user_id: id })
 	} catch (error) {
-		res.status(500).json({ error: 'Ocorreu um erro. ', stack: error })
+		res.status(500).json({ error: 'Ocorreu um erro.', stack: error })
 	}	
 })
 
