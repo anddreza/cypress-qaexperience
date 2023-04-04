@@ -13,6 +13,7 @@ const app = express ()
 app.use(express.json())
 
 const { deleteUser, insertUser, findToken } = require('./db')
+const { findKey } = require('cypress/types/lodash')
 
 const userSchema = Joi.object({
 	name: Joi.string().required(),
@@ -24,6 +25,19 @@ const userSchema = Joi.object({
 app.get('/welcome', function(req, res){
 	res.json({message: 'Olá'})
 })
+
+app.get('/token/:email', async function(req, res){
+	const { email } = req.params
+	const token = await findToken(email)
+	res.status(200).end(token)
+
+	if(!token){
+		return res.status(404).end()
+	} 
+
+	res.status(200).json(token)
+})
+
 
 app.delete('/user/:email', async function(req, res){
 	
