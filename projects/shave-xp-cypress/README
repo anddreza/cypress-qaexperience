@@ -43,3 +43,4 @@ Cadastrando um usuário via API
 A única forma de deletar o usuário pelo email é com um pacote: 
 npm install pg --save-dev 
 A biblioteca oficial do PostgresSQL
+
