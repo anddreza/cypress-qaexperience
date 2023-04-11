@@ -55,3 +55,4 @@ npm install bcrypt --save-dev
 
 <Aula Validações com Joi>
 npm install express-joi-validation --save-dev
+select * from users;

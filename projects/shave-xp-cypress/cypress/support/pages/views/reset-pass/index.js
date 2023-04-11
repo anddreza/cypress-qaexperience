@@ -1,12 +1,12 @@
-class ResetPassPage {
-	go(){
+/*class ResetPassPage {
+	go(token){
 		cy.visit('/reset-password?token=' + token)
 
 		cy.get('form h1')
 			.should('have.text', 'Resetar senha')
 	}
 
-	submit(pass, confirmPass){
+	submit(newPass, confirmPass){
 		cy.get('input[placeholder="Nova senha"]')
 			.type(newPass)
 
@@ -25,4 +25,4 @@ class ResetPassPage {
 	}
 }
 
-export default new ResetPassPage()
+export default new ResetPassPage()*/

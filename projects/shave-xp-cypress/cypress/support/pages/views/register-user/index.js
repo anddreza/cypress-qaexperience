@@ -1,4 +1,4 @@
-import shared from '../shared'
+/*import shared from '../../shared'
 class RegisterUserPage {
 
 	constructor(){
@@ -7,6 +7,7 @@ class RegisterUserPage {
 	
 	go(){
 		cy.visit('/signup')
+		
 		cy.get('form h1')
 			.should('have.text', 'Faça seu cadastro')
 	}
@@ -43,4 +44,4 @@ class RegisterUserPage {
 	}
 }
 
-export default new RegisterUserPage()
+export default new RegisterUserPage()*/

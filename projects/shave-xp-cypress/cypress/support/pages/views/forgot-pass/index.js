@@ -1,4 +1,4 @@
-class ForgotPassPage {
+/*class ForgotPassPage {
 // função que vai acessar a pagina
 	go(){
 		cy.visit('/forgot-password')
@@ -25,3 +25,4 @@ class ForgotPassPage {
 }
 
 export default new ForgotPassPage()
+*/

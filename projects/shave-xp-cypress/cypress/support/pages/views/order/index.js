@@ -1,4 +1,4 @@
-class OrderPage{
+/*class OrderPage{
 	hasOrder(){
 		cy.get('h1')
 			.should('be.visible')
@@ -10,4 +10,4 @@ class OrderPage{
 	}
 }
 
-export default new OrderPage()
+export default new OrderPage()*/

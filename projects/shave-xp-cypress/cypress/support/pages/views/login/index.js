@@ -1,4 +1,4 @@
-import shared from '../shared'
+/*import shared from '../../shared'
 // ṔascalCase - padrão oficial para criar classes em JS
 class Loginpage {
 
@@ -47,3 +47,4 @@ class Loginpage {
 
 export default new Loginpage()
 // new é a palavra reservada que ativa a classe, e o objeto que importar já pode usa-la 
+*/
