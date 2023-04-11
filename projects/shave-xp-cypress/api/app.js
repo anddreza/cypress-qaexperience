@@ -1,6 +1,6 @@
 const bcrypt = require('bcrypt')
 const Joi = require('joi')
-const express = require ('express')
+const express = require('express')
 
 
 const validator = require('express-joi-validation').createValidator({
@@ -8,12 +8,12 @@ const validator = require('express-joi-validation').createValidator({
 })
 
 
-const app = express ()
+const app = express()
 
 app.use(express.json())
 
 const { deleteUser, insertUser, findToken } = require('./db')
-const { findKey } = require('cypress/types/lodash')
+
 
 const userSchema = Joi.object({
 	name: Joi.string().required(),

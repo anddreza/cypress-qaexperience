@@ -9,7 +9,7 @@ class ForgotPassPage {
 		}
 
 	// submete o formulario de solicitação de troca de senha
-	submit(){
+	submit(email){
 		cy.get('input[placeholder$=mail]')		
 			.type(email)
 

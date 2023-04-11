@@ -1,9 +1,11 @@
+import shared from '../shared'
 // ṔascalCase - padrão oficial para criar classes em JS
 class Loginpage {
 
 	// 	Aqui temos PageObject, temos aqui o encapsulamento
 	constructor(){
 		this.alertError = '.alert-error'
+		this.shared = shared
 	}
 	// submit email = null, password = null
 	submit(email = null, password = null) { // função submit e com todos os steps para clicar no botão de 'Entrar'
@@ -31,20 +33,6 @@ class Loginpage {
 			.click()
 	}
 
-	noticeShouldBe(message) {
-		cy.get('.notice-container')
-			.should('be.visible')
-			.find('.error p')
-			.should('have.text', message)
-
-
-	}
-
-	alertShouldBe(message) {
-		cy.get(this.alertError)
-			.should('be.visible')
-			.should('have.text', message)
-	}
 
 	requiredFields(emailMessage, passwordMessage) {
 		cy.get(this.alertError)
