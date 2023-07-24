@@ -10,3 +10,4 @@ projects/shave-xp-cypress/dist/
 projects/shave-xp-cypress/node_modules/
 projects/shave-xp-cypress/package-lock.json
 projects/shave-xp-cypress/cypress.config.js
+cypress/videos
