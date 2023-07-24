@@ -1,4 +1,4 @@
-
+/*
 class Header {
 	userShouldBeLoggedIn(name) {
 
@@ -12,4 +12,4 @@ class Header {
 	}
 }
 
-export default new Header()
+export default new Header()*/

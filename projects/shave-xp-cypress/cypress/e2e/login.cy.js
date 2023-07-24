@@ -5,11 +5,14 @@ describe('login', () => {
 
 	context('quando submeto o formulário', () => {
 		it('deve logar com sucesso', () => {
+			
 			const user = data.success
 			cy.createUser(user)
-			
+			// loginPage.submit(user.email, user.password) -> Aula 2 			
 			cy.submitLogin(user.email, user.password)
+			// shaversPage.userShouldBeLoggedIn(user.name) ->  Aula 2
 			cy.userShouldBeLoggedIn(user.name)
+			// header.userShouldBeLoggedIn(user.name) -> Aula 2
 		})
 
 

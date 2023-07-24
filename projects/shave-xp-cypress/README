@@ -56,3 +56,9 @@ npm install bcrypt --save-dev
 <Aula Validações com Joi>
 npm install express-joi-validation --save-dev
 select * from users;
+
+<'Aula 11/04/2023'>
+https://www.npmjs.com/package/dotenv
+
+"apihelper": "nodemon api/app.js" -> pode colocar npx ou não, vai funcionar das duas formas. 
+
