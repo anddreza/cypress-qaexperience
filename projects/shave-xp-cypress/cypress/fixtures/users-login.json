@@ -1,40 +1,33 @@
 {
-	"sucess": {
-		
-	"name": "Andressa",
-	"email": "andressa@icloud.com",
-	"password": "pwd123",
-	"is_shaver": false 
-	},
-
-	"invpass": {
-		"email": "andressa@icloud.com",
-		"password": "abc123"
-	},
-
-	"email404": {
-	
-		"email": "andre@404.com",
-		"password": "abc123"
-	},
-	"shortpass": [
-		"1",
-		"12",
-		"123",
-		"1234",
-		"12345"
-	],
-	"invemails": [
-		"andressa&icloud.com",
-		"andressa.com.br",
-		"@icloud.com",
-		"@", 
-		"andressa@",
-		"123123",
-		"!@#!@#",
-		"xpto123"
-	]
-
-
+    "success": {
+        "name": "Fernando Papito",
+        "email": "papito@yahoo.com",
+        "password": "pwd123",
+        "is_shaver": false
+    },
+    "invpass": {
+        "email": "papito@yahoo.com",
+        "password": "abc123"
+    },
+    "email404": {
+        "email": "papito@404.com",
+        "password": "abc123"
+    },
+    "shortpass": [
+        "1",
+        "12",
+        "123",
+        "1234",
+        "12345"
+    ],
+    "invemails": [
+        "papito&gmail.com",
+        "papito.com.br",
+        "@gmail.com",
+        "@",
+        "papito@",
+        "121323",
+        "@#@!#!@",
+        "xpto123"
+    ]
 }
-
